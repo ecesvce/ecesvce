@@ -87,7 +87,95 @@
     #myBtn:hover {
        background-color: #555;
     }
-      </style>
+    ol{
+    	color: ghostwhite;
+    	font-family: 'Ubuntu',cursive;
+    }
+    #EVENT-NAME{
+    	font-size: 30px;
+    	font-family: 'Kreon',CURSIVE;
+    	color: #056676;
+    	margin-bottom: 20px;
+    	margin-top: 10px;
+    }
+    /* faq */
+    #faq{
+    	margin-bottom: 30px;
+    	margin-top: 30px;
+    }
+        #faq h1 {
+            font-family: 'Smythe', cursive;
+            font-size: 50px;
+            color: #e89da2;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        .panel-body p {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 5px 0 5px 0;
+            color:white;
+        }
+
+        #accordion .panel {
+            border-radius: 0;
+            border: 0;
+            margin-top: 0px;
+        }
+
+        #accordion a {
+            display: block;
+            padding: 10px 15px;
+            border-bottom: 1px solid #9c848e;
+            text-decoration: none;
+            color: #ffffff;
+            
+        }
+
+        #accordion .panel-heading a.collapsed:hover,
+        #accordion .panel-heading a.collapsed:focus {
+            background-color: #9c848e;
+            color: white;
+            transition: all 0.2s ease-in;
+        }
+
+            #accordion .panel-heading a.collapsed:hover::before,
+            #accordion .panel-heading a.collapsed:focus::before {
+                color: white;
+            }
+
+        #accordion .panel-heading {
+            padding: 0;
+            border-radius: 0px;
+            text-align: center;
+        }
+
+            #accordion .panel-heading a:not(.collapsed) {
+                color: white;
+                background-color: #8a2d54;
+                transition: all 0.2s ease-in;
+            }
+
+            #accordion .panel-heading .accordion-toggle::before {
+                font-family: 'FontAwesome';
+                content: '\f00d';
+                float: left;
+                color: white;
+                font-weight: lighter;
+                transform: rotate(0deg);
+                transition: all 0.2s ease-in;
+            }
+
+            #accordion .panel-heading .accordion-toggle.collapsed::before {
+                color: #444;
+                transform: rotate(135deg);
+                transition: all 0.2s ease-in;
+            }
+
+    </style>
 </head>
 <body>
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
@@ -281,6 +369,84 @@
 			</div>
 		</div>
 	</div>
+	<div id="rules" class="container">
+		<h1 class="text-center" id="section-heading">RULES</h1>
+		<h3 class="text-center" id="EVENT-NAME">TECH-PIRRATES</h3>
+		<div class="row">
+			
+			<li>
+				<ol>This event consists of 3 rounds</ol>
+				<ol>When you clear each round, you will be given a document which contains a component</ol>
+				<ol>When you clear each round, you will be given a document which contains a component</ol>
+				<ol>The quiz will contain questions from electronics and programming</ol>
+				<ol>After receiving all the components, you will be given one hour to come with a product made with the components received</ol>
+				<ol>You will have to present the product in front of a judge </ol>
+			</li>
+		</div>
+		<h3 class="text-center" id="EVENT-NAME">ARDUINO DE-BUGGING</h3>
+		<div class="row">
+			
+			<li>
+				<ol>This event consists of 2 rounds</ol>
+				<ol>The first round will be an Arduino based quiz</ol>
+				<ol>Based on your scores you will be selected for the next round</ol>
+				<ol>In the second round you will be given an Arduino code </ol>
+				<ol>You will have to debug the code and upload it </ol>
+			</li>
+		</div>
+		<h3 class="text-center" id="EVENT-NAME">STRESS INTERVIEW</h3>
+		<div class="row">
+			
+			<li>
+				<ol>This event is only for the students looking for an internship in the field of: FLUTTER APP DEVELOPMENT, MERN DEVELOPMENT</ol>
+				<ol>You will be judged on how you handle the interview</ol>
+				<ol>The winner of this event (STRESS INTERVIEW) will get an internship at STUDY MONK</ol>
+			</li>
+		</div>
+	</div>
+	<div id="faq">
+        <h1 class="text-center">FAQ</h1>
+        <div class="container center">
+            <div id="accordion" class="panel-group">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBodyOne" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Who can participate?</a>
+                        </h4>
+                    </div>
+                    <div id="panelBodyOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>This competition is open to engineering students from all colleges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBodyTwo" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Is there any registration fee?</a>
+                        </h4>
+                    </div>
+                    <div id="panelBodyTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>No, this competition is absolutely free for registration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBodyThree" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion">Question</a>
+                        </h4>
+                    </div>
+                    <div id="panelBodyThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Answer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-1x"></i></button>
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
