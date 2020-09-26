@@ -98,16 +98,99 @@
         	color:black;
         	padding-left: 7px;
    		}
+   		#technorush a{
+            text-decoration:none;
+        }
+        /* technorush */
+        .button {
+        	float: right;
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 150px;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: #00226A !important;
+            border: 2px #00226A solid;
+            border-radius: 4px;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            outline: 0;
+            overflow: hidden;
+            background-color: #9695EF;
+            z-index: 1;
+            cursor: pointer;
+            transition: 0.08s ease-in;
+            -o-transition: 0.08s ease-in;
+            -ms-transition: 0.08s ease-in;
+            -moz-transition: 0.08s ease-in;
+            -webkit-transition: 0.08s ease-in;
+        }
+		.slide:after{
+			content:"TECHNORUSH";
+			position:absolute;
+			width:100%;
+			height:100%;
+			left:0;
+			text-align:center;
+			-webkit-transition: all 600ms cubic-bezier(0.480, -0.550, 0.165, 1.550); 
+            
+		}
 
+		.slide:before {
+			content:"register →";
+			height:100%;
+			width:100%;
+			position:absolute;
+			left:-100%;
+			opacity: 0;
+			-webkit-transition: all 500ms cubic-bezier(0.480, -0.550, 0.165, 1.550); 
+            
+		}
+
+		.slide:hover{
+			background:#00226A;
+		}
+
+		.slide:hover:before{
+			left:0;
+			opacity:1;
+			color:#fff;
+		}
+		.slide:hover:after{
+			left:100%;
+			opacity:0;
+		}
+
+		@keyframes blink {
+				0% {
+					box-shadow: 0 0 2px #00226A;
+					color:black;
+
+				}
+				50% {
+					color:black;
+					box-shadow: 0 0 5px #00226A;
+				}
+				100% {
+					box-shadow: 0 0 10px #00226A;
+					color:black;
+
+				}
+			}
+		.slide {
+			animation: blink 700ms infinite;
+		}
 	</style>
 </head>
 <body>
 	<header>
-		<nav id="navbar" class="navbar navbar-expand-lg ">
+		<nav id="navbar" class="navbar navbar-expand">
 			  <a id="navbar-brand" class="navbar-brand" href="#">ECEA</a>
-  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-    			<span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
-  				</button>
+
+  				
   			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     			<div class="navbar-nav">
 				<a class="nav-item nav-link" href="./raic_home.html" target="_blank">RAIC</a>
@@ -116,6 +199,14 @@
       				<a class="nav-item nav-link" href="./eceamembers.html">BEARERS</a>
     			</div>
   			</div>
+  			<form id="technorush" class="form-inline">
+    			<a href="https://ecesvce.com/technorush.html">
+                <button class="button slide mr-sm-2" style="ali">&nbsp;</button></a>
+                <button class="navbar-toggler my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+    			<span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+  				</button>
+  			</form>
+
 		</nav>
 	</header>
 	<div id="content" class="container">
@@ -180,21 +271,6 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-	<script>
-		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-		document.getElementById("navbar").style.padding = "5px 10px";
-		document.getElementById("navbar-brand").style.fontSize = "25px";
-		document.getElementById("navbar").style.fontSize = "16px";
-		} else {
-		document.getElementById("navbar").style.padding = "10px 10px";
-		document.getElementById("navbar-brand").style.fontSize = "35px";
-		document.getElementById("navbar").style.fontSize = "18px";
-		}
-		}
-	</script>
+	
 </body>
 </html>
