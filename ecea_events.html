@@ -100,87 +100,7 @@
         .fa-quote-left{
             color:green;
         }
-	/* technorush */
-        .button {
-            position: relative;
-            display: inline-block;
-            height: 50px;
-            width: 150px;
-            font-weight: 700;
-            font-size: 15px;
-            letter-spacing: 2px;
-            color: #00226A !important;
-            border: 2px #00226A solid;
-            border-radius: 4px;
-            text-transform: uppercase;
-            text-align: center;
-            text-decoration: none;
-            outline: 0;
-            overflow: hidden;
-            background-color: #9695EF;
-            z-index: 1;
-            cursor: pointer;
-            transition: 0.08s ease-in;
-            -o-transition: 0.08s ease-in;
-            -ms-transition: 0.08s ease-in;
-            -moz-transition: 0.08s ease-in;
-            -webkit-transition: 0.08s ease-in;
-        }
-		.slide:after{
-			content:"TECHNORUSH";
-			position:absolute;
-			width:100%;
-			height:100%;
-			left:0;
-			text-align:center;
-			-webkit-transition: all 600ms cubic-bezier(0.480, -0.550, 0.165, 1.550); 
-            
-		}
-
-		.slide:before {
-			content:"register →";
-			height:100%;
-			width:100%;
-			position:absolute;
-			left:-100%;
-			opacity: 0;
-			-webkit-transition: all 500ms cubic-bezier(0.480, -0.550, 0.165, 1.550); 
-            
-		}
-
-		.slide:hover{
-			background:#00226A;
-		}
-
-		.slide:hover:before{
-			left:0;
-			opacity:1;
-			color:#fff;
-		}
-		.slide:hover:after{
-			left:100%;
-			opacity:0;
-		}
-
-		@keyframes blink {
-				0% {
-					box-shadow: 0 0 2px #00226A;
-					color:black;
-
-				}
-				50% {
-					color:black;
-					box-shadow: 0 0 5px #00226A;
-				}
-				100% {
-					box-shadow: 0 0 10px #00226A;
-					color:black;
-
-				}
-			}
-		.slide {
-			animation: blink 700ms infinite;
-		}
+	
 	</style>
 </head>
 <body>
@@ -202,10 +122,6 @@
                     <a class="nav-item nav-link" href="./eceamembers.html">BEARERS</a>
                 </div>
             </div>
-		<div class="d-none d-sm-block">
-    			<a href="./technorush.html">
-                <button class="button slide mr-sm-2" style="ali">&nbsp;</button></a>
-  			</div>
         </nav>
     </header>
     <div class="container" style="position:relative; margin-top:120px; font-family: 'Judson', serif;">
@@ -217,13 +133,36 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="../event_posters/webinaroncv.jpeg" class="card-img-top">
-                        <div class="card-body">
-                            <h3>IMAGE PROCESSING FOR MACHINE VISION APPLICATION</h3>
-                            <h5 class="light-grey">1st August 2020</h5>
-                            <p>ECE Association organized a webinar on ‘Image Processing for Machine Vision Applications’ delivered by Dr.R. Vani, Professor ECE Department, SRM Institute of Technology.</p>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../event_posters/technorush.jpeg" class="card-img-top" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../event_posters/techpirates.jpeg" class="card-img-top" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../event_posters/arduinodebug.jpeg" class="card-img-top" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../event_posters/stressinterview.jpeg" class="card-img-top" alt="Fourth slide">
+                            </div>
                         </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
+                    <div class="card-body">
+                        <h3>TECHNORUSH</h3>
+                        <h5 class="light-grey">1st August 2020</h5>
+                        <p>ECE Association organized a webinar on ‘Image Processing for Machine Vision Applications’ delivered by Dr.R. Vani, Professor ECE Department, SRM Institute of Technology.</p>
+                    </div>
+                </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
